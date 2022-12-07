@@ -12,7 +12,7 @@
 
 <body>
     <main>
-        <form action="livesearch.php" method="post">
+        <form action="livesearch.php/<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
             <fieldset>
                 <input class="livesearch" id="livesearch" placeholder="Digite um exercício...">
                 <select class="showResult"></select>
